@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".admin_functions.Delete_Area">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Country"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/area_country_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <Spinner
+        android:id="@+id/area_country_list"
+        android:layout_width="221dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="?attr/colorAccent"
+        android:hapticFeedbackEnabled="false"
+        android:hint="Select Country"
+        android:popupBackground="#900099CC"
+        android:stateListAnimator="@android:anim/fade_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select City"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area_country_list"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Spinner
+        android:id="@+id/area_city_list"
+        android:layout_width="221dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="?attr/colorAccent"
+        android:hapticFeedbackEnabled="false"
+        android:hint="Select Country"
+        android:popupBackground="#900099CC"
+        android:stateListAnimator="@android:anim/fade_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area_country_list"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/area_delete_area"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:background="#E91E63"
+        android:backgroundTint="#99E91E63"
+        android:text="Remove Area"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area_city_list"
+        app:layout_constraintVertical_bias="0.958" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
