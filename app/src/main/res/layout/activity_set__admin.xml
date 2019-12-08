@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context=".admin_functions.Set_Admin">
+
+    <Spinner
+        android:id="@+id/admin_list"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="?attr/colorAccent"
+        android:hapticFeedbackEnabled="false"
+        android:hint="Select an Admin"
+        android:stateListAnimator="@android:anim/fade_in"
+        android:popupBackground="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/submit_admin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_list"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Switch
+        android:id="@+id/set_admin_value"
+        android:layout_width="168dp"
+        android:layout_height="58dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:showText="true"
+        android:text="Admin"
+        android:textOff="off"
+        android:textOn="on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submit_admin_button"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_list"
+        app:layout_constraintVertical_bias="0.087"
+        app:showText="true"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="122dp"
+        android:layout_height="47dp"
+        android:background="#61009688"
+        android:buttonTint="@color/colorAccent"
+        android:checked="true"
+        android:fadingEdge="horizontal|vertical"
+        android:textOff="Users"
+        android:textOn="Admins"
+        app:layout_constraintBottom_toTopOf="@+id/admin_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
