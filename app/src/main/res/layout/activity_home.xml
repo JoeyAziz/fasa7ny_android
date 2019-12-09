@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/h">
+
+    <Button
+        android:id="@+id/fas7ny_button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="#00E91E63"
+        android:drawableRight="@android:drawable/ic_media_play"
+        android:gravity="center|right"
+        android:text="FASA7NY !"
+        android:textColor="#80E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/admin_button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1AE91E63"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:gravity="center|left"
+        android:text="Admin"
+        android:textColor="#803F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="121dp"
+        android:layout_height="62dp"
+        android:background="#009C27B0"
+        android:drawableLeft="@drawable/profile"
+        android:gravity="center|left"
+        android:text="Profiley"
+        android:textColor="#66E91E63"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
