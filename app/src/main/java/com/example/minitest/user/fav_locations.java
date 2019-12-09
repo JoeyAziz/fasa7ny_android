@@ -77,7 +77,7 @@ public class fav_locations extends AppCompatActivity {
 
 
                                 for(int i=0; i<jArray.length(); i++) {
-                                    JSONObject JObject_array = (JSONObject) jArray.get(0);
+                                    JSONObject JObject_array = (JSONObject) jArray.get(i);
                                     String name = JObject_array.getString("location_name");
                                     String budget = JObject_array.getString("budget");
                                     String country = JObject_array.getString("country_name");
