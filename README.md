@@ -2,7 +2,7 @@
 
 An ongoing static website is under development to demonstrate this project. (stay tuned)
 
-<h1 align="center"> Fasa7ny! </h1>
+<h1 href="#fasa7ny" align="center"> Fasa7ny! </h1>
 
 ### Purpose of `Fasa7ny`
 
